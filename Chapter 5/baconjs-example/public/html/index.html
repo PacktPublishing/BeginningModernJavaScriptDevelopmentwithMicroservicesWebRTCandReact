@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Bacon.js Example</title>
+	</head>
+	<body>
+		<button id="myButton">Click me!!!</button>
+		<input id="url" type="url">
+
+		<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="js/Bacon.js"></script>
+		<!--script type="text/javascript" src="js/index.js"></script-->
+		<script>
+			//jquery way
+			$("#myButton").click(function(){
+
+			})
+
+			//javascript way
+			document.getElementById("myButton")
+							.addEventListener("click",function () {
+
+							})
+
+			//Using Bacon
+			//Create event stream
+			/*var myButton_click_stream=
+					$("#myButton").asEventStream("click");*/
+
+					var myButton_click_stream=
+							$("#myButton").asEventStream("click").filter(function(e){
+								return e.shiftKey==true;
+							});
+
+			//reacting to the eventmy
+			myButton_click_stream.onValue(function(e){
+				console.log("button clicked..");
+			})
+
+			var button_click_counter = myButton_click_stream.scan(0,function(value,e){
+				return ++value;
+			})
+
+			button_click_counter.onValue(function(value){
+				console.log("Button clicked " + value + "no of times..");
+			})
+
+			var button_click_timer = button_click_counter.scan({},
+				function(value,count){
+					return {time:Date.now(),clicks:count}
+				})
+
+				button_click_timer.onValue(function(value){
+					console.log("Button clicked time "+JSON.stringify(value))
+				})
+
+				var merged_property =
+					Bacon.mergeAll([button_click_counter,button_click_timer]);
+				merged_property.onValue(function(value){
+					console.log(("merged property result "+JSON.stringify(value)));
+				})
+
+				var enter_key_click_stream =
+					$("#url").asEventStream("keyup").filter(function(e){
+						return e.keyCode == 13;
+					})
+
+				var url = enter_key_click_stream.scan("",function(value,e){
+						return e.currentTarget.value;
+				})
+
+				var response = url.flatMap(function(value){
+						 return Bacon.fromPromise($.ajax({url:value}));
+				}).toProperty();
+
+				response.onValue(function(value){   console.log(value); })
+		</script
+	</body>
+</html>

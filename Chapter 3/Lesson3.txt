@@ -1,0 +1,88 @@
+
+
+
+MediaDevices.enumerateDevices(function(device){
+  
+for(var count = 0; count < devices.length; count++)
+  {
+    console.log("device " + (count + 1) + " info:");
+    console.log("ID is: " + devices [count].id);
+
+    if(devices [count].label == "")
+    {
+      console.log("Name of the device is: unknown");
+    }
+    else
+    {
+      console.log("Name of the device is: " + devic-es[count].label);
+    }
+    
+    console.log("Kind of device: " + devices[count].kind);
+
+    if(devices[count].facing == "")
+    {
+      console.log("device facing: unknown");
+    }
+    else
+    {
+      console.log("device facing: " + devices[count].facing);
+    }
+  }
+})
+
+
+
+
+
+<!doctype html>
+<html>
+  <body>
+ <video id="myVideo"></video>
+    <br>
+    <input value="Pause" onclick="pause()" type="button" />
+    <script type="text/javascript">
+      navigator.getUserMedia = navigator.getUserMedia || naviga-tor.webkitGetUserMedia || navigator.mozGetUserMedia;
+      var constraints = {
+        audio: true,
+        video: true
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Realtime communication with WebRTC</title>
+<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<h1>Realtime communication with WebRTC</h1>
+ <video id="localVideo" autoplay></video>
+ <video id="remoteVideo" autoplay></video>
+<div>
+ <button id="startButton">Start</button>
+    <button id="callButton">Call</button>
+    <button id="hangupButton">Hang Up</button>
+  </div>
+<script src="js/lib/adapter.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+'use strict';
+var startButton = document.getElementById('startButton');
+var callButton = document.getElementById('callButton');
+var hangupButton = document.getElementById('hangupButton');
+callButton.disabled = true;
+hangupButton.disabled = true;
+startButton.onclick = start;
+callButton.onclick = call;
+hangupButton.onclick = hangup;
+var startTime;
+var localVideo = document.getElementById('localVideo');
+var remoteVideo = document.getElementById('remoteVideo');
+localVideo.addEventListener('loadedmetadata', function() {
+  trace('Local video videoWidth: ' + this.videoWidth +
+    'px,  videoHeight: ' + this.videoHeight + 'px');
+});
+
+

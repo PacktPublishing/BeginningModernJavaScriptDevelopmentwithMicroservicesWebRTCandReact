@@ -1,0 +1,221 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+    shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/
+    bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-
+    /Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+    crossorigin="anonymous">
+  </head>
+  <body>
+<!-- YOUR CONTENT GOES HERE -->
+…
+…
+</html>
+
+Using the new grid system
+
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu 
+        nunc, lobortis et lacinia ut, pellentesque quis lacus. Aliquam non 
+        dapibus erat
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu 
+
+</div>
+
+
+ <hr>
+ <div class="row">
+  <div class="col-12 m-t-2">
+    <p>
+      Lorem ipsum dolor sit amet, at suscipit sodales eget ante ultricies mauris. Etiam dolor felis morbi nibh, mollit porttitor tempor, dignissim magna pellentesque dictumst bibendum dictum integer. Justo mattis dapibus in diam. Quis arcu mauris mattis, orci est magna arcu scelerisque, integer gravida sit volutpat tellus, nulla enim quis. In non, in et, nec mauris in eu nec, nostra pellentesque nulla sodales, tempor neque ultrices lorem.
+   </p>
+
+<hr>
+
+<table class="table table-inverse">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Ramesh</td>
+      <td>Kumar</td>
+      <td>@ramesh</td>
+    </tr>
+
+    <tr>
+      <th scope="row">2</th>
+      <td>Sudheep</td>
+      <td>Sahoo</td>
+      <td>@sudheep</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td>Abhinash</td>
+      <td>Singh</td>
+      <td>@abhi</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+	
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-block">
+        <h4 class="card-title">Card title</h4>
+        <h6 class="card-subtitle">Support card subtitle</h6>
+      </div>
+
+      <img class="img-fluid" src="https://placehold.it/800x400" 
+      alt="Card image cap">
+
+      <div class="card-block">
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, at suscipit sodales eget 
+          ante ultricies mauris. Etiam dolor felis morbi nibh, 
+          mollit porttitor tempor, dignissim magna pellentesque 
+          dictumst bibendum dictum integer.
+        </p>
+      </div>
+
+      <div class="card-block">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+
+      <div class="card-footer">
+        2 days ago
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top img-fluid" 
+      src="https://placehold.it/800x400" alt="Card image cap">
+
+      <div class="card-block">
+        <blockquote class="card-blockquote">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+          elit. Integer posuere erat a ante.</p>
+          <footer>Someone famous in <cite title="Source 
+          Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-block">
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, at suscipit sodales eget 
+          ante ultricies mauris. Etiam dolor felis morbi nibh, 
+          mollit porttitor tempor, dignissim magna pellentesque 
+          dictumst bibendum dictum integer.
+        </p>
+      </div>
+
+      <img class="card-img-bottom img-fluid" 
+      src="https://placehold.it/800x400" alt="Card image cap">
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img img-fluid" src="https://placehold.it/800x400" alt="Card image cap">
+
+      <div class="card-img-overlay">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, at 
+        suscipit.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card card-inverse" style="background-color: 
+    black">
+      <div class="card-block">
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet, at 
+        suscipit sodales eget ante ultricies mauris. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card card-inverse card-primary">
+      <div class="card-block">
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet, at suscipit sodales eget ante ultricies mauris.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card card-inverse card-success">
+      <div class="card-block">
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet, at suscipit sodales eget ante ultricies mauris.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card card-inverse card-info">
+      <div class="card-block">
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet, at 
+        suscipit sodales eget ante ultricies mauris.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card card-inverse card-warning">
+      <div class="card-block">
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet, at suscipit sodales eget ante ultricies mauris.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card card-inverse card-danger">
+      <div class="card-block">
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet, at 
+        suscipit sodales eget ante ultricies mauris.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
