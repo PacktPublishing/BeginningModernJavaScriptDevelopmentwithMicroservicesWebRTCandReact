@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8" />
+ <title>React Demo</title>
+ <script src="react.js"></script>
+ <script src="react-dom.js"></script>
+ </head>
+ <body>
+ <script>
+ //place React code here
+ </script>
+ </body>
+</html>
+
+
+
+
+var helloBold = React.createElement("b", {}, "Hello");
+var worldItalic = React.createElement("i", {}, " World");
+var helloWorld = React.createElement("a", {href: "#"},
+helloBold, worldItalic);
+ReactDOM.render(helloWorld, document.
+getElementById("container1"));
+
+
