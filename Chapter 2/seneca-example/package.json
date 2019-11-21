@@ -1,7 +1,0 @@
-{
-  "name": "seneca-example",
-  "dependencies": {
-  	"seneca": "0.6.5",
-  	"express" : "4.13.3"
-  }
-}
